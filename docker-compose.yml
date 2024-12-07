@@ -1,0 +1,12 @@
+version: '3.8'  # Specify the version to use
+
+services:  # Define the services
+  web:  # Name of the service
+    build:  # Build configuration
+      context: .  # Use the current directory
+      dockerfile: Dockerfile  # Specify the Dockerfile name
+    ports:  # Ports to expose
+      - "9090:8080"  # Map host port 3000 to container port 3000
+    environment:  # Optionally define environment variables
+      NODE_ENV: development
+    
