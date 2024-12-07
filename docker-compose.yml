@@ -6,7 +6,7 @@ services:  # Define the services
       context: .  # Use the current directory
       dockerfile: Dockerfile  # Specify the Dockerfile name
     ports:  # Ports to expose
-      - "9999:8080"  # Map host port 3000 to container port 3000
+      - "9999:3000"  # Map host port 3000 to container port 3000
     environment:  # Optionally define environment variables
       NODE_ENV: development
     
